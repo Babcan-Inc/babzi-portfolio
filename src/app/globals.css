@@ -46,18 +46,17 @@ body {
   padding-left: 1rem;
 }
 
-/* Oxblood frame around the whole page */
-.page-frame {
-  position: fixed;
-  inset: 10px;
-  border: 2px solid var(--accent);
-  pointer-events: none;
-  z-index: 60;
-}
 
 @media (min-width: 640px) {
   .page-frame {
     inset: 14px;
   }
+}
+
+/* Document frame: grows with content, closes at the page end */
+.page-shell {
+  min-height: 100vh;
+  border: 2px solid var(--accent);
+  box-sizing: border-box;
 }
 

@@ -243,6 +243,14 @@ export default function Home() {
             >
               𝕏
             </a>
+            <a
+              href="https://t.me/its_BABZI"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[var(--muted)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
+            >
+              Telegram
+            </a>
           </div>
         </section>
 

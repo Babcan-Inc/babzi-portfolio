@@ -7,7 +7,7 @@ const stressTests = [
     title: "Stress testing digital voting infrastructure under real constraints",
     excerpt:
       "Most digital voting tools do not fail in theory. They fail in environments like mine. From Lagos on ordinary Android 4G, invited by Vocdoni to test three surfaces: one production path, two DAVINCI MVPs. Wallet friction, NFC assumptions, and silent exclusion showed up as design, not bad luck.",
-    href: "https://paragraph.com/@babziweb3@gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
+    href: "https://paragraph.com/@babziweb3%40gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
     cta: "Read the Vocdoni report",
   },
   {

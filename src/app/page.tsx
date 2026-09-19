@@ -2,9 +2,9 @@ const stressTests = [
   {
     num: "01",
     kicker: "Field stress test",
-    title: "Three digital voting tools from Lagos",
+    title: "Stress testing digital voting infrastructure under real constraints",
     excerpt:
-      "Most digital voting tools do not fail in theory. They fail in environments like mine. Invited by Vocdoni to test three surfaces on ordinary Android 4G: one production path, two DAVINCI MVPs. Wallet friction, NFC assumptions, and silent exclusion showed up as design, not bad luck.",
+      "Most digital voting tools do not fail in theory. They fail in environments like mine. From Lagos on ordinary Android 4G, invited by Vocdoni to test three surfaces: one production path, two DAVINCI MVPs. Wallet friction, NFC assumptions, and silent exclusion showed up as design, not bad luck.",
     href: "https://paragraph.com/@babziweb3@gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
     cta: "Read the Vocdoni report",
   },
@@ -70,7 +70,7 @@ export default function Home() {
         {/* Thesis */}
         <section className="mb-16 sm:mb-24">
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
-            Governance · Token design · Agent economies
+            Governance · Token design · Agentic economies
           </p>
           <h1 className="font-display text-[2.05rem] leading-[1.12] tracking-[-0.015em] text-[var(--ink)] sm:text-[2.85rem] sm:leading-[1.08]">
             I design systems for how economies reward behaviour, including when agents become actors.

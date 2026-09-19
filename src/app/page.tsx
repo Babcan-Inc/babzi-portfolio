@@ -47,8 +47,8 @@ const interventions = [
 
 export default function Home() {
   return (
-    <main id="top" className="relative px-3 py-3 sm:px-5 sm:py-5">
-      <div className="page-shell mx-auto max-w-[720px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
+    <main id="top" className="page-shell relative">
+      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
         <SiteHeader />
 
         {/* Thesis */}

@@ -53,10 +53,11 @@ body {
   }
 }
 
-/* Document frame: grows with content, closes at the page end */
+/* Full-bleed document frame: oxblood at screen edge, no outer gutter */
 .page-shell {
   min-height: 100vh;
   border: 2px solid var(--accent);
   box-sizing: border-box;
+  width: 100%;
 }
 

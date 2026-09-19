@@ -228,29 +228,26 @@ export default function Home() {
           <p className="mt-4 max-w-[32rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
             Send the mechanism and the question you want answered. If points, vaults, or governance are pulling in different directions, say so.
           </p>
-          <p className="mt-6 text-[14px]">
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 text-[14px]">
             <a
               href="mailto:babziweb3@gmail.com"
-              className="text-[var(--accent)] underline-offset-4 hover:underline"
+              className="font-medium text-[var(--accent)] underline-offset-4 hover:underline"
             >
-              babziweb3@gmail.com
+              Email
             </a>
-          </p>
-          <p className="mt-2 text-[14px] text-[var(--muted)]">
             <a
               href="https://x.com/Babzi_web3"
               target="_blank"
               rel="noreferrer"
-              className="underline-offset-4 hover:text-[var(--accent)] hover:underline"
+              className="text-[var(--muted)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
             >
-              𝕏 — @Babzi_web3
+              𝕏
             </a>
-          </p>
+          </div>
         </section>
 
-        <footer className="mt-14 flex items-center justify-between gap-4 border-t border-[var(--line)] pt-6 text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">
-          <p>BABZI · Lagos</p>
-          <p>Incentive instrument</p>
+        <footer className="mt-14 border-t border-[var(--line)] pt-6 text-[12px] text-[var(--muted)]">
+          <p>© 2026 BABZI</p>
         </footer>
       </div>
     </main>

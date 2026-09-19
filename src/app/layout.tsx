@@ -29,15 +29,27 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BABZI",
     description:
-      "Protocol incentives, governance design, and agent economies. Written Protocol Incentive and Actor Reviews.",
+      "I design systems for how economies reward behaviour, including when agents become actors.",
     url: "https://babzi.xyz",
     siteName: "BABZI",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "BABZI — protocol systems for how economies reward behaviour",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Babzi_web3",
     creator: "@Babzi_web3",
+    title: "BABZI",
+    description:
+      "I design systems for how economies reward behaviour, including when agents become actors.",
+    images: ["/og.png"],
   },
 };
 

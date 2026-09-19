@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f3eee4;
-  --bg-elevated: #faf7f1;
-  --ink: #1a1612;
-  --muted: #6a6158;
-  --line: #d9d0c2;
-  --accent: #a34d2d;
-  --accent-soft: rgba(163, 77, 45, 0.08);
+  /* Brand kit: X cream paper + dark ink; oxblood accent for editorial weight */
+  --bg: #f1ebe1;
+  --bg-elevated: #f8f4ec;
+  --ink: #161210;
+  --muted: #5f574f;
+  --line: #d4cbbd;
+  --accent: #7a2e24;
+  --accent-soft: rgba(122, 46, 36, 0.09);
 }
 
 html {
@@ -24,7 +25,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #faf7f1;
+  color: #f8f4ec;
 }
 
 .font-display {

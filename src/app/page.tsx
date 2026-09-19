@@ -70,13 +70,13 @@ export default function Home() {
         {/* Thesis */}
         <section className="mb-16 sm:mb-24">
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
-            Incentive design · Agent economies
+            Governance · Token design · Agent economies
           </p>
           <h1 className="font-display text-[2.05rem] leading-[1.12] tracking-[-0.015em] text-[var(--ink)] sm:text-[2.85rem] sm:leading-[1.08]">
-            I design who a protocol rewards, what behaviour that buys, and where the system breaks.
+            I design systems for how economies reward behaviour, including when agents become actors.
           </h1>
           <p className="mt-6 max-w-[36rem] text-[15px] leading-relaxed text-[var(--muted)] sm:text-[15.5px]">
-            Most teams decorate incentives. I stress test them. Especially when agents enter economies built for humans, or when real constraints expose the assumptions in the deck.
+            Governance, tokens, and incentives are parts of one system. I stress test how that system behaves under pressure, especially when agents enter economies built for humans, or when real constraints expose the assumptions in the deck.
           </p>
         </section>
 

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f6f1e8;
-  --bg-elevated: #fffdf9;
-  --border: #e4d9c8;
-  --text: #1f1b17;
-  --muted: #6d645a;
-  --accent: #b85c38;
-  --accent-soft: rgba(184, 92, 56, 0.12);
+  --bg: #f3eee4;
+  --bg-elevated: #faf7f1;
+  --ink: #1a1612;
+  --muted: #6a6158;
+  --line: #d9d0c2;
+  --accent: #a34d2d;
+  --accent-soft: rgba(163, 77, 45, 0.08);
 }
 
 html {
@@ -16,41 +16,31 @@ html {
 
 body {
   background: var(--bg);
-  color: var(--text);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 ::selection {
   background: var(--accent);
-  color: #fffdf9;
+  color: #faf7f1;
 }
 
-.grid-fade {
-  background-image:
-    linear-gradient(to right, rgba(31, 27, 23, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(31, 27, 23, 0.035) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse at top, black 18%, transparent 68%);
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, "Times New Roman", serif;
 }
 
-@media (min-width: 640px) {
-  .grid-fade {
-    background-size: 48px 48px;
-  }
+.font-sans {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
-.label {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.rule {
+  height: 1px;
+  background: var(--line);
 }
 
-@media (min-width: 640px) {
-  .label {
-    font-size: 0.75rem;
-    letter-spacing: 0.16em;
-  }
+.pull {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
 }

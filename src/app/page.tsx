@@ -1,31 +1,32 @@
-const publicWork = [
+const featured = [
   {
-    title: "Canopy Progressive Tokenization",
-    blurb:
-      "Published proposal on progressive sovereignty and how nested chain economies can unlock ownership without forcing a premature token model.",
-    kind: "Public proposal",
-    href: "https://x.com/Babzi_web3/status/2077252115513131290",
+    kicker: "Field research · 2026",
+    title: "I tested three digital voting tools from Nigeria",
+    excerpt:
+      "Most digital voting tools do not fail in theory. They fail in environments like mine. Invited by Vocdoni to stress test three surfaces from Lagos on ordinary Android 4G: one production path, two DAVINCI MVPs.",
+    href: "https://paragraph.com/@babziweb3@gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
+    linkLabel: "Read on Paragraph",
   },
   {
+    kicker: "Public proposal · Canopy",
+    title: "Progressive Tokenization",
+    excerpt:
+      "Reading Progressive Sovereignty raised the next question sovereign appchains face: how nested economies unlock ownership without forcing a premature token. A public framework for intentional graduation paths.",
+    href: "https://x.com/Babzi_web3/status/2077252115513131290",
+    linkLabel: "Open thread",
+  },
+];
+
+const moreWork = [
+  {
     title: "Polymarket $POLY design note",
-    blurb:
-      "Public thread and design proposal on token mechanics for an information market. Stress tested incentives and actor behaviour in the open.",
-    kind: "Public proposal",
+    meta: "Public proposal",
     href: "https://x.com/Babzi_web3/status/2075075380470280507",
   },
   {
     title: "How to Build an Economy for Autonomous Agents",
-    blurb:
-      "Implementation framework covering actors, incentives, reputation, governance, economic security, and token architecture for agent economies.",
-    kind: "Framework",
+    meta: "Framework",
     href: "https://x.com/Babzi_web3/status/2098649769748926551",
-  },
-  {
-    title: "Vocdoni voting tools, Lagos stress test",
-    blurb:
-      "Invited by Vocdoni to test three voting surfaces from Lagos on ordinary Android 4G. One production path, two DAVINCI MVPs. Reported wallet, metadata, NFC, and silent exclusion issues. Public writeup on Paragraph.",
-    kind: "Field research",
-    href: "https://paragraph.com/@babziweb3@gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
   },
 ];
 
@@ -34,180 +35,201 @@ const engagements = [
     title: "Oarcoin",
     blurb:
       "Submitted a 32 page governance design proposal, still under review. Wrote the tokenomics and helped formalize the whitepaper so structure matches their philosophy.",
-    kind: "Governance and token design",
   },
   {
     title: "PIM Protocol",
     blurb:
-      "Delivered a tokenomics review used to shape their incentive design. Their tokenomics largely followed that framing. Past engagement; not an ongoing retainer.",
-    kind: "Tokenomics review",
+      "Delivered a tokenomics review used to shape their incentive design. Past engagement, not an ongoing retainer.",
   },
 ];
 
-function WorkCard({
-  title,
-  blurb,
-  kind,
-  href,
-}: {
-  title: string;
-  blurb: string;
-  kind: string;
-  href?: string;
-}) {
-  return (
-    <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5 shadow-[0_1px_0_rgba(31,27,23,0.04)] transition hover:border-[#d2c4ae] sm:p-6">
-      <p className="label mb-2 text-[var(--accent)]">{kind}</p>
-      <h3 className="text-lg font-semibold tracking-tight sm:text-xl">{title}</h3>
-      <p className="mt-3 text-[0.95rem] leading-relaxed text-[var(--muted)] sm:text-base">
-        {blurb}
-      </p>
-      {href ? (
-        <p className="mt-4">
-          <a
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-medium text-[var(--accent)] underline-offset-4 hover:underline"
-          >
-            View source
-          </a>
-        </p>
-      ) : null}
-    </article>
-  );
-}
-
 export default function Home() {
   return (
-    <main className="relative overflow-x-hidden">
-      <div className="pointer-events-none absolute inset-0 grid-fade" aria-hidden />
-
-      <div className="relative mx-auto max-w-3xl px-4 pb-20 pt-8 sm:px-8 sm:pb-24 sm:pt-10">
-        <header className="mb-12 flex items-start justify-between gap-3 sm:mb-16 sm:items-center sm:gap-4">
-          <p className="shrink-0 text-sm font-medium tracking-[0.14em] text-[var(--muted)] sm:tracking-[0.18em]">
+    <main className="relative">
+      <div className="mx-auto max-w-[720px] px-5 pb-24 pt-8 sm:px-8 sm:pt-12">
+        <header className="mb-14 flex items-baseline justify-between gap-4 sm:mb-20">
+          <a href="/" className="font-display text-2xl tracking-tight text-[var(--ink)]">
             BABZI
-          </p>
-          <nav className="flex max-w-[70%] flex-wrap items-center justify-end gap-x-3 gap-y-2 text-xs text-[var(--muted)] sm:max-w-none sm:gap-5 sm:text-sm">
-            <a href="#work" className="transition hover:text-[var(--text)]">
+          </a>
+          <nav className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 text-[13px] text-[var(--muted)]">
+            <a href="#writing" className="transition hover:text-[var(--ink)]">
+              Writing
+            </a>
+            <a href="#work" className="transition hover:text-[var(--ink)]">
               Work
             </a>
-            <a href="#engagements" className="transition hover:text-[var(--text)]">
-              Engagements
-            </a>
-            <a href="#offer" className="transition hover:text-[var(--text)]">
+            <a href="#offer" className="transition hover:text-[var(--ink)]">
               Offer
             </a>
-            <a href="#contact" className="transition hover:text-[var(--text)]">
+            <a href="#contact" className="transition hover:text-[var(--ink)]">
               Contact
             </a>
           </nav>
         </header>
 
-        <section className="mb-16 sm:mb-20">
-          <p className="label mb-3 text-[var(--accent)] sm:mb-4">
-            Research · Token design · Agent economies
+        <section className="mb-16 sm:mb-24">
+          <p className="mb-5 text-[12px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
+            Protocol research
           </p>
-          <h1 className="max-w-2xl text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-[var(--text)] sm:text-4xl sm:leading-tight md:text-5xl">
-            Protocol incentives, governance design, and economies for autonomous agents.
+          <h1 className="font-display max-w-[18ch] text-[2.15rem] leading-[1.12] tracking-[-0.01em] text-[var(--ink)] sm:text-[3.15rem] sm:leading-[1.08]">
+            Designing the incentives behind protocol economies.
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:mt-6 sm:text-lg">
+          <p className="mt-6 max-w-[34rem] text-[15.5px] leading-relaxed text-[var(--muted)] sm:text-base">
             I write scoped reviews of who a protocol rewards, what behaviour that buys, and where the design breaks under stress. Founders get a clear memo, not theatre.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:mt-7">
+          <p className="mt-6 text-[13.5px] text-[var(--muted)]">
             <a
               href="mailto:babziweb3@gmail.com"
-              className="font-medium text-[var(--accent)] underline-offset-4 hover:underline"
+              className="text-[var(--accent)] underline-offset-4 hover:underline"
             >
               babziweb3@gmail.com
             </a>
+            <span className="mx-2 text-[var(--line)]">/</span>
             <a
               href="https://x.com/Babzi_web3"
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--muted)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
+              className="underline-offset-4 hover:text-[var(--accent)] hover:underline"
             >
-              𝕏 @Babzi_web3
+              @Babzi_web3
             </a>
-          </div>
+          </p>
         </section>
 
-        <section id="offer" className="mb-16 scroll-mt-24 sm:mb-20">
-          <h2 className="label mb-4 text-[var(--muted)]">What I deliver</h2>
-          <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-5 shadow-[0_1px_0_rgba(31,27,23,0.04)] sm:p-8">
-            <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
-              Protocol Incentive and Actor Review
-            </h3>
-            <p className="mt-4 text-[0.95rem] leading-relaxed text-[var(--muted)] sm:text-base">
-              A written memo on your incentive surface: actors, rewards, failure modes, and what the design produces when points, vaults, or governance pull in different directions.
-            </p>
-            <ul className="mt-6 space-y-3 text-[0.95rem] text-[var(--muted)] sm:text-base">
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                Scoped written review, usually five to seven days
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                Actor map and stress notes you can share with founders or a board
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                Cash engagement. Overflow friendly for tokenomics shops
-              </li>
-            </ul>
-            <p className="mt-6 text-sm text-[var(--muted)]">
-              Not full token model ownership. Clear written judgment on the incentive layer.
+        <div className="rule mb-14 sm:mb-20" />
+
+        <section id="writing" className="mb-16 scroll-mt-24 sm:mb-24">
+          <div className="mb-8 flex items-end justify-between gap-4">
+            <h2 className="font-display text-2xl tracking-tight sm:text-[1.75rem]">
+              Featured writing
+            </h2>
+            <p className="pb-1 text-[12px] uppercase tracking-[0.12em] text-[var(--muted)]">
+              Two pieces
             </p>
           </div>
-        </section>
 
-        <section id="work" className="mb-16 scroll-mt-24 sm:mb-20">
-          <h2 className="label mb-4 text-[var(--muted)]">Selected public work</h2>
-          <div className="space-y-4">
-            {publicWork.map((item) => (
-              <WorkCard key={item.title} {...item} />
+          <div className="space-y-12 sm:space-y-16">
+            {featured.map((piece) => (
+              <article key={piece.title} className="group">
+                <p className="mb-3 text-[12px] uppercase tracking-[0.12em] text-[var(--accent)]">
+                  {piece.kicker}
+                </p>
+                <h3 className="font-display text-[1.45rem] leading-snug tracking-tight sm:text-[1.85rem]">
+                  <a
+                    href={piece.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition hover:text-[var(--accent)]"
+                  >
+                    {piece.title}
+                  </a>
+                </h3>
+                <p className="pull mt-5 max-w-[36rem] text-[15px] leading-relaxed text-[var(--muted)]">
+                  {piece.excerpt}
+                </p>
+                <p className="mt-5">
+                  <a
+                    href={piece.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[13.5px] font-medium text-[var(--ink)] underline decoration-[var(--line)] underline-offset-[5px] transition hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  >
+                    {piece.linkLabel}
+                  </a>
+                </p>
+              </article>
             ))}
           </div>
         </section>
 
-        <section id="engagements" className="mb-16 scroll-mt-24 sm:mb-20">
-          <h2 className="label mb-4 text-[var(--muted)]">Selected engagements</h2>
-          <div className="space-y-4">
+        <section className="mb-16 sm:mb-24">
+          <h2 className="mb-6 text-[12px] font-medium uppercase tracking-[0.12em] text-[var(--muted)]">
+            Also public
+          </h2>
+          <ul className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
+            {moreWork.map((item) => (
+              <li key={item.title}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex flex-col gap-1 py-4 transition hover:bg-[var(--bg-elevated)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 sm:px-1"
+                >
+                  <span className="text-[15px] font-medium text-[var(--ink)]">
+                    {item.title}
+                  </span>
+                  <span className="shrink-0 text-[12px] uppercase tracking-[0.1em] text-[var(--muted)]">
+                    {item.meta}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section id="work" className="mb-16 scroll-mt-24 sm:mb-24">
+          <h2 className="font-display mb-8 text-2xl tracking-tight sm:text-[1.75rem]">
+            Selected engagements
+          </h2>
+          <div className="space-y-8">
             {engagements.map((item) => (
-              <WorkCard key={item.title} {...item} />
+              <div key={item.title} className="grid gap-2 sm:grid-cols-[9rem_1fr] sm:gap-8">
+                <p className="text-[13px] font-medium uppercase tracking-[0.1em] text-[var(--accent)]">
+                  {item.title}
+                </p>
+                <p className="text-[15px] leading-relaxed text-[var(--muted)]">
+                  {item.blurb}
+                </p>
+              </div>
             ))}
           </div>
         </section>
 
-        <section id="contact" className="scroll-mt-24">
-          <h2 className="label mb-4 text-[var(--muted)]">Contact</h2>
-          <div className="rounded-2xl border border-[var(--border)] bg-[var(--accent-soft)] p-5 sm:p-8">
-            <p className="max-w-xl text-base leading-relaxed text-[var(--text)] sm:text-lg">
-              If you are redesigning incentives, migrating points to a token, or shipping an agent economy with thin economic design, send a short note with the mechanism and the question you want answered.
-            </p>
-            <p className="mt-5 text-sm sm:mt-6">
-              <a
-                href="mailto:babziweb3@gmail.com"
-                className="break-all text-[var(--accent)] underline-offset-4 hover:underline"
-              >
-                babziweb3@gmail.com
-              </a>
-            </p>
-            <p className="mt-2 text-sm">
-              <a
-                href="https://x.com/Babzi_web3"
-                target="_blank"
-                rel="noreferrer"
-                className="text-[var(--muted)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
-              >
-                𝕏 — @Babzi_web3
-              </a>
-            </p>
-          </div>
+        <div className="rule mb-14 sm:mb-20" />
+
+        <section id="offer" className="mb-16 scroll-mt-24 sm:mb-24">
+          <p className="mb-3 text-[12px] uppercase tracking-[0.12em] text-[var(--muted)]">
+            How to work together
+          </p>
+          <h2 className="font-display text-[1.65rem] tracking-tight sm:text-[2rem]">
+            Protocol Incentive and Actor Review
+          </h2>
+          <p className="mt-5 max-w-[34rem] text-[15px] leading-relaxed text-[var(--muted)]">
+            A written memo on your incentive surface: actors, rewards, failure modes, and what the design produces when points, vaults, or governance pull in different directions. Usually five to seven days. Cash engagement. Not full token model ownership.
+          </p>
         </section>
 
-        <footer className="mt-16 border-t border-[var(--border)] pt-8 text-sm text-[var(--muted)] sm:mt-20">
-          <p>BABZI · protocol research</p>
+        <section
+          id="contact"
+          className="scroll-mt-24 rounded-sm bg-[var(--bg-elevated)] px-5 py-8 sm:px-8 sm:py-10"
+        >
+          <h2 className="font-display text-2xl tracking-tight">Contact</h2>
+          <p className="mt-4 max-w-[32rem] text-[15px] leading-relaxed text-[var(--muted)]">
+            If you are redesigning incentives, migrating points to a token, or shipping an agent economy with thin economic design, send a short note with the mechanism and the question you want answered.
+          </p>
+          <p className="mt-6 text-[14px]">
+            <a
+              href="mailto:babziweb3@gmail.com"
+              className="text-[var(--accent)] underline-offset-4 hover:underline"
+            >
+              babziweb3@gmail.com
+            </a>
+          </p>
+          <p className="mt-2 text-[14px] text-[var(--muted)]">
+            <a
+              href="https://x.com/Babzi_web3"
+              target="_blank"
+              rel="noreferrer"
+              className="underline-offset-4 hover:text-[var(--accent)] hover:underline"
+            >
+              𝕏 — @Babzi_web3
+            </a>
+          </p>
+        </section>
+
+        <footer className="mt-16 flex items-center justify-between gap-4 border-t border-[var(--line)] pt-6 text-[12px] text-[var(--muted)]">
+          <p>BABZI · Lagos</p>
+          <p>Protocol research</p>
         </footer>
       </div>
     </main>

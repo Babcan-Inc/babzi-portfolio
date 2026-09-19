@@ -48,13 +48,12 @@ const interventions = [
 export default function Home() {
   return (
     <main id="top" className="relative">
-      <div className="brand-bar" aria-hidden="true" />
-      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
+      <div className="page-frame" aria-hidden="true" />
+      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-5 sm:px-8 sm:pt-6">
         <SiteHeader />
 
         {/* Thesis */}
-        <section className="hero-field mb-16 -mx-5 px-5 py-10 sm:mb-24 sm:-mx-8 sm:px-8 sm:py-12">
-          <p className="banner-whisper">Designing systems that last.</p>
+        <section className="mb-16 sm:mb-24">
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             Governance · Token design · Agentic economies
           </p>

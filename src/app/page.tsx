@@ -1,3 +1,5 @@
+import SiteHeader from "./SiteHeader";
+
 const stressTests = [
   {
     num: "01",
@@ -45,30 +47,14 @@ const interventions = [
 
 export default function Home() {
   return (
-    <main className="relative">
-      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-10 sm:px-8 sm:pt-14">
-        <header className="mb-16 flex items-baseline justify-between gap-4 sm:mb-24">
-          <p className="font-display text-[1.65rem] tracking-tight text-[var(--ink)]">
-            BABZI
-          </p>
-          <nav className="flex flex-wrap justify-end gap-x-5 gap-y-2 text-[12.5px] text-[var(--muted)]">
-            <a href="#method" className="hover:text-[var(--ink)]">
-              Method
-            </a>
-            <a href="#proof" className="hover:text-[var(--ink)]">
-              Proof
-            </a>
-            <a href="#offer" className="hover:text-[var(--ink)]">
-              Offer
-            </a>
-            <a href="#contact" className="hover:text-[var(--ink)]">
-              Contact
-            </a>
-          </nav>
-        </header>
+    <main id="top" className="relative">
+      <div className="brand-bar" aria-hidden="true" />
+      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
+        <SiteHeader />
 
         {/* Thesis */}
-        <section className="mb-16 sm:mb-24">
+        <section className="hero-field mb-16 -mx-5 px-5 py-10 sm:mb-24 sm:-mx-8 sm:px-8 sm:py-12">
+          <p className="banner-whisper">Designing systems that last.</p>
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             Governance · Token design · Agentic economies
           </p>

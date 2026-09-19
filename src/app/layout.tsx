@@ -25,17 +25,17 @@ export const metadata: Metadata = {
   title: "BABZI — Protocol incentives, governance, agent economies",
   description:
     "Independent research on protocol incentive design, governance architecture, and economies for autonomous agents.",
-  metadataBase: new URL("https://babzi.xyz"),
+  metadataBase: new URL("https://www.babzi.xyz"),
   openGraph: {
     title: "BABZI",
     description:
       "I design systems for how economies reward behaviour, including when agents become actors.",
-    url: "https://babzi.xyz",
+    url: "https://www.babzi.xyz",
     siteName: "BABZI",
     type: "website",
     images: [
       {
-        url: "/og.png",
+        url: "https://www.babzi.xyz/og.png",
         width: 1200,
         height: 630,
         alt: "BABZI — protocol systems for how economies reward behaviour",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "BABZI",
     description:
       "I design systems for how economies reward behaviour, including when agents become actors.",
-    images: ["/og.png"],
+    images: ["https://www.babzi.xyz/og.png"],
   },
 };
 

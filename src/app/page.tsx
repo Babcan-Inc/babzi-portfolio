@@ -1,4 +1,4 @@
-const work = [
+const publicWork = [
   {
     title: "Canopy Progressive Tokenization",
     blurb:
@@ -17,7 +17,65 @@ const work = [
       "Implementation framework covering actors, incentives, reputation, governance, economic security, and token architecture for agent economies.",
     kind: "Framework",
   },
+  {
+    title: "Vocdoni voting tools, Lagos stress test",
+    blurb:
+      "Invited by Vocdoni to test three voting surfaces from Lagos on ordinary Android 4G. One production path, two DAVINCI MVPs. Reported wallet, metadata, NFC, and silent exclusion issues. Public writeup on Paragraph.",
+    kind: "Field research",
+    href: "https://paragraph.com/@babziweb3@gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
+  },
 ];
+
+const engagements = [
+  {
+    title: "Oarcoin",
+    blurb:
+      "Submitted a 32 page governance design proposal, still under review. Wrote the tokenomics and helped formalize the whitepaper so structure matches their philosophy. Also hosts Oar Daily with Oarcoin and Web3Nigeria.",
+    kind: "Governance and token design",
+    href: "https://x.com/oarcoin",
+  },
+  {
+    title: "PIM Protocol",
+    blurb:
+      "Currently redesigning their organization framework, with governance design and tokenomics realignment for a dual token L1. Live engagement, not a finished public case study.",
+    kind: "Org and incentive redesign",
+    href: "https://x.com/pimprotocol",
+  },
+];
+
+function WorkCard({
+  title,
+  blurb,
+  kind,
+  href,
+}: {
+  title: string;
+  blurb: string;
+  kind: string;
+  href?: string;
+}) {
+  return (
+    <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-6 shadow-[0_1px_0_rgba(31,27,23,0.04)] transition hover:border-[#d2c4ae]">
+      <p className="mb-2 text-xs uppercase tracking-[0.16em] text-[var(--accent)]">
+        {kind}
+      </p>
+      <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
+      <p className="mt-3 leading-relaxed text-[var(--muted)]">{blurb}</p>
+      {href ? (
+        <p className="mt-4">
+          <a
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-medium text-[var(--accent)] underline-offset-4 hover:underline"
+          >
+            View source
+          </a>
+        </p>
+      ) : null}
+    </article>
+  );
+}
 
 export default function Home() {
   return (
@@ -29,9 +87,12 @@ export default function Home() {
           <p className="text-sm font-medium tracking-[0.18em] text-[var(--muted)]">
             BABZI
           </p>
-          <nav className="flex items-center gap-5 text-sm text-[var(--muted)]">
+          <nav className="flex flex-wrap items-center justify-end gap-4 text-sm text-[var(--muted)] sm:gap-5">
             <a href="#work" className="transition hover:text-[var(--text)]">
               Work
+            </a>
+            <a href="#engagements" className="transition hover:text-[var(--text)]">
+              Engagements
             </a>
             <a href="#offer" className="transition hover:text-[var(--text)]">
               Offer
@@ -46,7 +107,7 @@ export default function Home() {
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-[var(--accent)]">
             Research · Token design · Agent economies
           </p>
-          <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight text-[var(--text)] sm:text-5xl">
             Protocol incentives, governance design, and economies for autonomous agents.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
@@ -55,7 +116,7 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="mailto:babziweb3@gmail.com"
-              className="inline-flex items-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-[#0b0c0f] transition hover:brightness-110"
+              className="inline-flex items-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-[#fffdf9] transition hover:brightness-110"
             >
               Email BABZI
             </a>
@@ -63,7 +124,7 @@ export default function Home() {
               href="https://x.com/Babzi_web3"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] px-5 py-2.5 text-sm text-[var(--text)] transition hover:border-[var(--muted)]"
+              className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] px-5 py-2.5 text-sm text-[var(--text)] transition hover:border-[#cbbfaa]"
             >
               𝕏 @Babzi_web3
             </a>
@@ -74,7 +135,7 @@ export default function Home() {
           <h2 className="mb-4 text-sm uppercase tracking-[0.2em] text-[var(--muted)]">
             What I deliver
           </h2>
-          <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-6 sm:p-8">
+          <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-6 shadow-[0_1px_0_rgba(31,27,23,0.04)] sm:p-8">
             <h3 className="text-2xl font-semibold tracking-tight">
               Protocol Incentive and Actor Review
             </h3>
@@ -106,17 +167,19 @@ export default function Home() {
             Selected public work
           </h2>
           <div className="space-y-4">
-            {work.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-2xl border border-[var(--border)] bg-[var(--bg-elevated)] p-6 transition hover:border-[#3a4152]"
-              >
-                <p className="mb-2 text-xs uppercase tracking-[0.16em] text-[var(--accent)]">
-                  {item.kind}
-                </p>
-                <h3 className="text-xl font-semibold tracking-tight">{item.title}</h3>
-                <p className="mt-3 leading-relaxed text-[var(--muted)]">{item.blurb}</p>
-              </article>
+            {publicWork.map((item) => (
+              <WorkCard key={item.title} {...item} />
+            ))}
+          </div>
+        </section>
+
+        <section id="engagements" className="mb-20 scroll-mt-24">
+          <h2 className="mb-4 text-sm uppercase tracking-[0.2em] text-[var(--muted)]">
+            Selected engagements
+          </h2>
+          <div className="space-y-4">
+            {engagements.map((item) => (
+              <WorkCard key={item.title} {...item} />
             ))}
           </div>
         </section>

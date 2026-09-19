@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0b0c0f;
-  --bg-elevated: #12141a;
-  --border: #232733;
-  --text: #e8eaef;
-  --muted: #9aa3b5;
-  --accent: #c8f542;
-  --accent-soft: rgba(200, 245, 66, 0.12);
+  --bg: #f6f1e8;
+  --bg-elevated: #fffdf9;
+  --border: #e4d9c8;
+  --text: #1f1b17;
+  --muted: #6d645a;
+  --accent: #b85c38;
+  --accent-soft: rgba(184, 92, 56, 0.12);
 }
 
 html {
@@ -23,13 +23,13 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #0b0c0f;
+  color: #fffdf9;
 }
 
 .grid-fade {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(31, 27, 23, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(31, 27, 23, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse at top, black 20%, transparent 70%);
 }

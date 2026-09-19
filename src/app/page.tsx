@@ -114,18 +114,18 @@ export default function Home() {
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:mt-6 sm:text-lg">
             I write scoped reviews of who a protocol rewards, what behaviour that buys, and where the design breaks under stress. Founders get a clear memo, not theatre.
           </p>
-          <div className="mt-7 flex flex-wrap gap-3 sm:mt-8">
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:mt-7">
             <a
               href="mailto:babziweb3@gmail.com"
-              className="inline-flex min-h-11 items-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-[#fffdf9] transition hover:brightness-110"
+              className="font-medium text-[var(--accent)] underline-offset-4 hover:underline"
             >
-              Email BABZI
+              babziweb3@gmail.com
             </a>
             <a
               href="https://x.com/Babzi_web3"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-11 items-center rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] px-5 py-2.5 text-sm text-[var(--text)] transition hover:border-[#cbbfaa]"
+              className="text-[var(--muted)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
             >
               𝕏 @Babzi_web3
             </a>
@@ -185,20 +185,20 @@ export default function Home() {
             <p className="max-w-xl text-base leading-relaxed text-[var(--text)] sm:text-lg">
               If you are redesigning incentives, migrating points to a token, or shipping an agent economy with thin economic design, send a short note with the mechanism and the question you want answered.
             </p>
-            <p className="mt-6">
+            <p className="mt-5 text-sm sm:mt-6">
               <a
                 href="mailto:babziweb3@gmail.com"
-                className="break-all font-medium text-[var(--accent)] underline-offset-4 hover:underline"
+                className="break-all text-[var(--accent)] underline-offset-4 hover:underline"
               >
                 babziweb3@gmail.com
               </a>
             </p>
-            <p className="mt-3">
+            <p className="mt-2 text-sm">
               <a
                 href="https://x.com/Babzi_web3"
                 target="_blank"
                 rel="noreferrer"
-                className="font-medium text-[var(--text)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
+                className="text-[var(--muted)] underline-offset-4 hover:text-[var(--accent)] hover:underline"
               >
                 𝕏 — @Babzi_web3
               </a>

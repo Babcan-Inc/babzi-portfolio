@@ -33,16 +33,14 @@ const engagements = [
   {
     title: "Oarcoin",
     blurb:
-      "Submitted a 32 page governance design proposal, still under review. Wrote the tokenomics and helped formalize the whitepaper so structure matches their philosophy. Also hosts Oar Daily with Oarcoin and Web3Nigeria.",
+      "Submitted a 32 page governance design proposal, still under review. Wrote the tokenomics and helped formalize the whitepaper so structure matches their philosophy.",
     kind: "Governance and token design",
-    href: "https://x.com/oarcoin",
   },
   {
     title: "PIM Protocol",
     blurb:
-      "Currently redesigning their organization framework, with governance design and tokenomics realignment for a dual token L1. Live engagement, not a finished public case study.",
-    kind: "Org and incentive redesign",
-    href: "https://x.com/pimprotocol",
+      "Delivered a tokenomics review used to shape their incentive design. Their tokenomics largely followed that framing. Past engagement; not an ongoing retainer.",
+    kind: "Tokenomics review",
   },
 ];
 

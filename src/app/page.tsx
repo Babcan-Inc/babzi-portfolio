@@ -1,5 +1,7 @@
 import SiteHeader from "./SiteHeader";
+import Link from "next/link";
 import Reveal from "./Reveal";
+import { homePublicWork } from "@/content/publicWork";
 
 const stressTests = [
   {
@@ -19,19 +21,6 @@ const stressTests = [
       "Public proposal. Progressive Sovereignty raised the next question sovereign appchains face: how nested economies unlock ownership without forcing a premature token. Two intentional paths, Builder and Sovereign, so graduation is designed, not improvised.",
     href: "https://x.com/Babzi_web3/status/2077252115513131290",
     cta: "Open the Canopy thread",
-  },
-];
-
-const index = [
-  {
-    title: "Polymarket $POLY design note",
-    meta: "Public proposal",
-    href: "https://x.com/Babzi_web3/status/2075075380470280507",
-  },
-  {
-    title: "How to Build an Economy for Autonomous Agents",
-    meta: "Framework",
-    href: "https://x.com/Babzi_web3/status/2098649769748926551",
   },
 ];
 
@@ -173,7 +162,7 @@ export default function Home() {
             Also public
           </h2>
           <ul className="border-y border-[var(--line)]">
-            {index.map((item) => (
+            {homePublicWork.map((item) => (
               <li key={item.title} className="border-b border-[var(--line)] last:border-b-0">
                 <a
                   href={item.href}
@@ -191,6 +180,14 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <p className="mt-4">
+            <Link
+              href="/work"
+              className="text-[13px] font-medium text-[var(--accent)] underline decoration-[var(--accent)]/35 underline-offset-[5px] hover:decoration-[var(--accent)]"
+            >
+              All public work
+            </Link>
+          </p>
         </section>
         </Reveal>
 

@@ -1,4 +1,5 @@
 import SiteHeader from "./SiteHeader";
+import Reveal from "./Reveal";
 
 const stressTests = [
   {
@@ -52,6 +53,7 @@ export default function Home() {
         <SiteHeader />
 
         {/* Thesis */}
+        <Reveal eager>
         <section className="mb-16 sm:mb-24">
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--accent)]">
             Governance · Token design · Agentic economies
@@ -63,10 +65,12 @@ export default function Home() {
             Governance, tokens, and incentives are parts of one system. I stress test how that system behaves under pressure, especially when agents enter economies built for humans, or when real constraints expose the assumptions in the deck.
           </p>
         </section>
+        </Reveal>
 
         <div className="rule mb-14 sm:mb-20" />
 
         {/* Method */}
+        <Reveal>
         <section id="method" className="mb-16 scroll-mt-24 sm:mb-24">
           <h2 className="font-display mb-8 text-[1.55rem] tracking-tight sm:text-[1.7rem]">
             How I intervene
@@ -106,10 +110,12 @@ export default function Home() {
             ))}
           </ol>
         </section>
+        </Reveal>
 
         <div className="rule mb-14 sm:mb-20" />
 
         {/* Proof */}
+        <Reveal>
         <section id="proof" className="mb-16 scroll-mt-24 sm:mb-24">
           <div className="mb-10 flex items-end justify-between gap-4">
             <h2 className="font-display text-[1.55rem] tracking-tight sm:text-[1.7rem]">
@@ -158,8 +164,10 @@ export default function Home() {
             ))}
           </div>
         </section>
+        </Reveal>
 
         {/* Index */}
+        <Reveal>
         <section className="mb-16 sm:mb-24">
           <h2 className="mb-5 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--muted)]">
             Also public
@@ -184,8 +192,10 @@ export default function Home() {
             ))}
           </ul>
         </section>
+        </Reveal>
 
         {/* Interventions */}
+        <Reveal>
         <section className="mb-16 sm:mb-24">
           <h2 className="font-display mb-8 text-[1.55rem] tracking-tight sm:text-[1.7rem]">
             Interventions
@@ -206,10 +216,12 @@ export default function Home() {
             ))}
           </div>
         </section>
+        </Reveal>
 
         <div className="rule mb-14 sm:mb-20" />
 
         {/* Offer */}
+        <Reveal>
         <section id="offer" className="mb-16 scroll-mt-24 sm:mb-24">
           <p className="mb-3 text-[11px] uppercase tracking-[0.12em] text-[var(--muted)]">
             Scoped work
@@ -259,8 +271,10 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </Reveal>
 
         {/* Contact */}
+        <Reveal>
         <section id="contact" className="scroll-mt-24 border border-[var(--line)] bg-[var(--bg-elevated)] px-5 py-8 sm:px-8">
           <h2 className="font-display text-[1.45rem] tracking-tight">Contact</h2>
           <p className="mt-4 max-w-[32rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
@@ -311,6 +325,7 @@ export default function Home() {
             </a>
           </div>
         </section>
+        </Reveal>
 
         <footer className="mt-14 border-t border-[var(--line)] pt-6 text-[12px] text-[var(--muted)]">
           <p>© 2026 BABZI</p>

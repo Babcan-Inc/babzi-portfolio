@@ -234,11 +234,11 @@ export default function Home() {
             </div>
             <div>
               <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
-                Out of scope
+                Out of scope for this review
               </p>
               <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
-                <li>Full token model ownership</li>
-                <li>Ongoing retainer or implementation</li>
+                <li>Owning or rebuilding the full token model</li>
+                <li>Retainer or implementation unless scoped separately</li>
               </ul>
             </div>
             <div>
@@ -246,7 +246,7 @@ export default function Home() {
                 Timing and terms
               </p>
               <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">
-                Usually five to seven days from a clean brief. Paid in cash.
+                Usually five to seven days from a clean brief. Paid in cash once we agree, before the work starts.
               </p>
             </div>
             <div>

@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { publicWork } from "@/content/publicWork";
 import Reveal from "../Reveal";
+import { publishedPosts, hrefFor } from "@/lib/writing";
+import { loadWriting } from "@/lib/writingStore";
 
 export const metadata: Metadata = {
-  title: "Public work — BABZI",
+  title: "Writings · BABZI",
   description:
-    "Public writing and proposals on protocol incentives, governance, and agent economies.",
+    "Writings and proposals on protocol incentives, governance, and agent economies.",
   openGraph: {
-    title: "Public work — BABZI",
+    title: "Writings · BABZI",
     description:
-      "Public writing and proposals on protocol incentives, governance, and agent economies.",
+      "Writings and proposals on protocol incentives, governance, and agent economies.",
     url: "https://www.babzi.xyz/work",
   },
 };
 
-export default function WorkPage() {
+export default async function WorkPage() {
+  const posts = publishedPosts(await loadWriting());
+
   return (
     <main id="top" className="page-shell relative">
       <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
@@ -40,36 +43,41 @@ export default function WorkPage() {
               Archive
             </p>
             <h1 className="font-display text-[2rem] tracking-tight sm:text-[2.35rem]">
-              Public work
+              Writings
             </h1>
             <p className="mt-4 max-w-[34rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-              Writing and proposals on protocol incentives, governance, and agent economies. The home page stays short on purpose. This is the full shelf.
+              Notes and proposals on protocol incentives, governance, and agent economies. The home page stays short on purpose. This is the full shelf.
             </p>
           </section>
         </Reveal>
 
         <Reveal>
           <ul className="border-y border-[var(--line)]">
-            {publicWork.map((item) => (
-              <li
-                key={item.href}
-                className="border-b border-[var(--line)] last:border-b-0"
-              >
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex flex-col gap-1 py-4 transition hover:bg-[var(--bg-elevated)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+            {posts.map((item) => {
+              const href = hrefFor(item);
+              const external = href.startsWith("http");
+              return (
+                <li
+                  key={item.id}
+                  className="border-b border-[var(--line)] last:border-b-0"
                 >
-                  <span className="text-[15px] font-medium text-[var(--ink)]">
-                    {item.title}
-                  </span>
-                  <span className="shrink-0 text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">
-                    {item.meta}
-                  </span>
-                </a>
-              </li>
-            ))}
+                  <a
+                    href={href}
+                    {...(external
+                      ? { target: "_blank", rel: "noreferrer" }
+                      : {})}
+                    className="flex flex-col gap-1 py-4 transition hover:bg-[var(--bg-elevated)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+                  >
+                    <span className="text-[15px] font-medium text-[var(--ink)]">
+                      {item.title}
+                    </span>
+                    <span className="shrink-0 text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">
+                      {item.meta}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </Reveal>
 

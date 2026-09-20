@@ -84,3 +84,58 @@ body {
   }
 }
 
+
+/* On-site writing body */
+.writing-body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.writing-body h1,
+.writing-body h2,
+.writing-body h3 {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  margin-top: 1.75rem;
+  margin-bottom: 0.65rem;
+}
+.writing-body h1 { font-size: 1.65rem; }
+.writing-body h2 { font-size: 1.4rem; }
+.writing-body h3 { font-size: 1.2rem; }
+.writing-body p { margin: 0.9rem 0; }
+.writing-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.writing-body ul,
+.writing-body ol {
+  margin: 0.9rem 0;
+  padding-left: 1.25rem;
+}
+.writing-body li { margin: 0.35rem 0; }
+.writing-body blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1.1rem 0;
+  color: var(--ink);
+}
+.writing-body code {
+  font-size: 0.9em;
+  background: var(--bg-elevated);
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--line);
+}
+.writing-body pre {
+  overflow-x: auto;
+  padding: 0.9rem 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  margin: 1.1rem 0;
+}
+.writing-body pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}

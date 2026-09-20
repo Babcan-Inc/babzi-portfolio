@@ -1,7 +1,8 @@
 import SiteHeader from "./SiteHeader";
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { homePublicWork } from "@/content/publicWork";
+import { homeFeatured, hrefFor } from "@/lib/writing";
+import { loadWriting } from "@/lib/writingStore";
 
 const stressTests = [
   {
@@ -35,7 +36,10 @@ const interventions = [
   },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const posts = await loadWriting();
+  const featured = homeFeatured(posts);
+
   return (
     <main id="top" className="page-shell relative">
       <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
@@ -155,37 +159,42 @@ export default function Home() {
         </section>
         </Reveal>
 
-        {/* Index */}
+        {/* Writings featured */}
         <Reveal>
         <section className="mb-16 sm:mb-24">
           <h2 className="mb-5 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--muted)]">
-            Also public
+            Writings
           </h2>
           <ul className="border-y border-[var(--line)]">
-            {homePublicWork.map((item) => (
-              <li key={item.title} className="border-b border-[var(--line)] last:border-b-0">
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex flex-col gap-1 py-3.5 transition hover:bg-[var(--bg-elevated)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
-                >
-                  <span className="text-[14.5px] font-medium text-[var(--ink)]">
-                    {item.title}
-                  </span>
-                  <span className="text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">
-                    {item.meta}
-                  </span>
-                </a>
-              </li>
-            ))}
+            {featured.map((item) => {
+              const href = hrefFor(item);
+              const external = href.startsWith("http");
+              return (
+                <li key={item.id} className="border-b border-[var(--line)] last:border-b-0">
+                  <a
+                    href={href}
+                    {...(external
+                      ? { target: "_blank", rel: "noreferrer" }
+                      : {})}
+                    className="flex flex-col gap-1 py-3.5 transition hover:bg-[var(--bg-elevated)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+                  >
+                    <span className="text-[14.5px] font-medium text-[var(--ink)]">
+                      {item.title}
+                    </span>
+                    <span className="text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">
+                      {item.meta}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <p className="mt-4">
             <Link
               href="/work"
               className="text-[13px] font-medium text-[var(--accent)] underline decoration-[var(--accent)]/35 underline-offset-[5px] hover:decoration-[var(--accent)]"
             >
-              All public work
+              More writings
             </Link>
           </p>
         </section>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "polymarket-poly-design-note",
+    "slug": "polymarket-poly-design-note",
+    "title": "Polymarket $POLY design note",
+    "meta": "Public proposal",
+    "excerpt": "Public design note on $POLY incentive surface.",
+    "externalUrl": "https://x.com/Babzi_web3/status/2075075380470280507",
+    "body": "",
+    "publishedAt": "2026-07-01",
+    "featuredOnHome": true,
+    "published": true
+  },
+  {
+    "id": "economy-for-autonomous-agents",
+    "slug": "economy-for-autonomous-agents",
+    "title": "How to Build an Economy for Autonomous Agents",
+    "meta": "Framework",
+    "excerpt": "Framework for economies where agents are actors.",
+    "externalUrl": "https://x.com/Babzi_web3/status/2098649769748926551",
+    "body": "",
+    "publishedAt": "2026-09-01",
+    "featuredOnHome": true,
+    "published": true
+  },
+  {
+    "id": "vocdoni-constraints",
+    "slug": "vocdoni-constraints",
+    "title": "When real constraints expose assumptions in the deck",
+    "meta": "Field stress test · Vocdoni",
+    "excerpt": "Field stress test of digital voting surfaces under ordinary infrastructure constraints.",
+    "externalUrl": "https://paragraph.com/@babziweb3%40gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
+    "body": "",
+    "publishedAt": "2026-06-01",
+    "featuredOnHome": false,
+    "published": true
+  },
+  {
+    "id": "canopy-progressive-tokenization",
+    "slug": "canopy-progressive-tokenization",
+    "title": "Progressive Tokenization for Canopy",
+    "meta": "Public framework",
+    "excerpt": "Public proposal on nested ownership paths without a premature token.",
+    "externalUrl": "https://x.com/Babzi_web3/status/2077252115513131290",
+    "body": "",
+    "publishedAt": "2026-07-15",
+    "featuredOnHome": false,
+    "published": true
+  }
+]

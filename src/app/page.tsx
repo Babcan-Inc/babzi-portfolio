@@ -4,9 +4,9 @@ const stressTests = [
   {
     num: "01",
     kicker: "Field stress test",
-    title: "Stress testing digital voting infrastructure under real constraints",
+    title: "When real constraints expose assumptions in the deck",
     excerpt:
-      "Most digital voting tools do not fail in theory. They fail in environments like mine. From Lagos on ordinary Android 4G, invited by Vocdoni to test three surfaces: one production path, two DAVINCI MVPs. Wallet friction, NFC assumptions, and silent exclusion showed up as design, not bad luck.",
+      "Most digital voting tools do not fail in theory. They fail when ordinary infrastructure meets product assumptions. Invited by Vocdoni, I tested three surfaces from Lagos on ordinary Android 4G: one production path, two DAVINCI MVPs. Wallet friction, NFC assumptions, and silent exclusion showed up as design, not bad luck.",
     href: "https://paragraph.com/@babziweb3%40gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
     cta: "Read the Vocdoni report",
   },
@@ -15,7 +15,7 @@ const stressTests = [
     kicker: "Public framework",
     title: "Progressive Tokenization for Canopy",
     excerpt:
-      "Progressive Sovereignty raised the next question sovereign appchains face: how nested economies unlock ownership without forcing a premature token. Two intentional paths, Builder and Sovereign, so graduation is designed, not improvised.",
+      "Public proposal. Progressive Sovereignty raised the next question sovereign appchains face: how nested economies unlock ownership without forcing a premature token. Two intentional paths, Builder and Sovereign, so graduation is designed, not improvised.",
     href: "https://x.com/Babzi_web3/status/2077252115513131290",
     cta: "Open the Canopy thread",
   },
@@ -218,15 +218,53 @@ export default function Home() {
             Protocol Incentive and Actor Review
           </h2>
           <p className="mt-5 max-w-[36rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-            A written memo on your incentive surface: actors, rewards, and failure modes. Usually five to seven days. Cash. Not full token model ownership. Clear judgment on the rules and goals of the system.
+            A written memo on your incentive surface. Actors, rewards, and failure modes. Built for founders who need judgment before they lock emissions, points, or governance.
           </p>
+
+          <div className="mt-8 max-w-[36rem] space-y-6">
+            <div>
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+                You receive
+              </p>
+              <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
+                <li>A short memo that maps who can act, what the system pays for, and where it breaks</li>
+                <li>Concrete failure modes tied to your mechanism, not generic tokenomics advice</li>
+                <li>Clear recommendations on what to change, what to leave, and what to test next</li>
+              </ul>
+            </div>
+            <div>
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+                Out of scope
+              </p>
+              <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
+                <li>Full token model ownership</li>
+                <li>Ongoing retainer or implementation</li>
+              </ul>
+            </div>
+            <div>
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+                Timing and terms
+              </p>
+              <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">
+                Usually five to seven days from a clean brief. Paid in cash.
+              </p>
+            </div>
+            <div>
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+                How to start
+              </p>
+              <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">
+                Send the mechanism and the question you want answered. If points, vaults, or governance are pulling apart, say so.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Contact */}
         <section id="contact" className="scroll-mt-24 border border-[var(--line)] bg-[var(--bg-elevated)] px-5 py-8 sm:px-8">
           <h2 className="font-display text-[1.45rem] tracking-tight">Contact</h2>
           <p className="mt-4 max-w-[32rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-            Send the mechanism and the question you want answered. If points, vaults, or governance are pulling in different directions, say so.
+            Email, X, or Telegram. Start from the offer above if you already know the mechanism and the question.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-5">
             <a

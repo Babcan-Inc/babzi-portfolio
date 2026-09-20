@@ -56,7 +56,7 @@ body {
 /* Full-bleed document frame: oxblood at screen edge, no outer gutter */
 .page-shell {
   min-height: 100vh;
-  border: 2px solid var(--accent);
+  border: 4px solid var(--accent);
   box-sizing: border-box;
   width: 100%;
 }

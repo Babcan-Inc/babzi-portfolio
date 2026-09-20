@@ -223,7 +223,7 @@ export default function Home() {
 
           <div className="mt-8 max-w-[36rem] space-y-6">
             <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
                 You receive
               </p>
               <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
@@ -233,7 +233,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
                 Out of scope for this review
               </p>
               <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
@@ -242,7 +242,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
                 Timing and terms
               </p>
               <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">
@@ -250,7 +250,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[var(--ink)]">
+              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
                 How to start
               </p>
               <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">

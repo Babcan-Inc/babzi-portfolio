@@ -236,46 +236,21 @@ export default async function Home() {
             Protocol Incentive and Actor Review
           </h2>
           <p className="mt-5 max-w-[36rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-            A written memo on your incentive surface. Actors, rewards, and failure modes. Built for founders who need judgment before they lock emissions, points, or governance.
+            A focused review of your incentive surface: who can act, what the system rewards, and where the mechanism can break under real behaviour.
           </p>
-
-          <div className="mt-8 max-w-[36rem] space-y-6">
-            <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-                You receive
-              </p>
-              <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
-                <li>A short memo that maps who can act, what the system pays for, and where it breaks</li>
-                <li>Concrete failure modes tied to your mechanism, not generic tokenomics advice</li>
-                <li>Clear recommendations on what to change, what to leave, and what to test next</li>
-              </ul>
-            </div>
-            <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-                Out of scope for this review
-              </p>
-              <ul className="space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
-                <li>Owning or rebuilding the full token model</li>
-                <li>Retainer or implementation unless scoped separately</li>
-              </ul>
-            </div>
-            <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-                Timing and terms
-              </p>
-              <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">
-                Usually five to seven days from a clean brief. Paid in cash once we agree, before the work starts.
-              </p>
-            </div>
-            <div>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-                How to start
-              </p>
-              <p className="text-[14.5px] leading-relaxed text-[var(--muted)]">
-                Send the mechanism and the question you want answered. If points, vaults, or governance are pulling apart, say so.
-              </p>
-            </div>
-          </div>
+          <ul className="mt-7 max-w-[36rem] space-y-2 text-[14.5px] leading-relaxed text-[var(--muted)]">
+            <li>Actor map and incentive surface</li>
+            <li>Concrete failure modes tied to the mechanism</li>
+            <li>Written findings with changes and tests to consider</li>
+          </ul>
+          <p className="mt-7">
+            <Link
+              href="/services"
+              className="text-[13px] font-medium text-[var(--accent)] underline decoration-[var(--accent)]/35 underline-offset-[5px] hover:decoration-[var(--accent)]"
+            >
+              Scope, pricing, and terms
+            </Link>
+          </p>
         </section>
         </Reveal>
 

@@ -16,6 +16,8 @@ export async function generateMetadata({
   const posts = publishedPosts(await loadWriting());
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Not found · BABZI" };
+  const preview = `/work/${post.slug}/opengraph-image`;
+
   return {
     title: `${post.title} · BABZI`,
     description: post.excerpt || post.meta,
@@ -23,6 +25,13 @@ export async function generateMetadata({
       title: `${post.title} · BABZI`,
       description: post.excerpt || post.meta,
       url: `https://www.babzi.xyz/work/${post.slug}`,
+      images: [{ url: preview, width: 1200, height: 630, alt: `${post.title} · BABZI` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} · BABZI`,
+      description: post.excerpt || post.meta,
+      images: [preview],
     },
   };
 }

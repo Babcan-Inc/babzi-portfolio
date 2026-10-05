@@ -5,94 +5,38 @@ import { publishedPosts, hrefFor } from "@/lib/writing";
 import { loadWriting } from "@/lib/writingStore";
 
 export const metadata: Metadata = {
-  title: "Writings · BABZI",
-  description:
-    "Writings and proposals on protocol incentives, governance, and agent economies.",
-  openGraph: {
-    title: "Writings · BABZI",
-    description:
-      "Writings and proposals on protocol incentives, governance, and agent economies.",
-    url: "https://www.babzi.xyz/work",
-  },
+  title: "Writings · Babzi.xyz",
+  description: "Research notes and design proposals on protocol incentives, governance, token design, and agentic economies.",
 };
 
 export default async function WorkPage() {
   const posts = publishedPosts(await loadWriting());
-
   return (
-    <main id="top" className="page-shell relative">
-      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
-        <header className="mb-12 flex items-baseline justify-between gap-4 border-b border-[var(--line)] py-4 sm:mb-16">
-          <Link
-            href="/"
-            className="font-display text-[1.55rem] tracking-tight text-[var(--ink)]"
-          >
-            BABZI
-          </Link>
-          <Link
-            href="/"
-            className="text-[12.5px] text-[var(--muted)] transition hover:text-[var(--ink)]"
-          >
-            Home
-          </Link>
-        </header>
-
+    <main className="site-shell min-h-screen">
+      <div className="mx-auto max-w-[1180px] px-5 pb-24 sm:px-8 lg:px-10">
+        <header className="site-header"><Link href="/" className="wordmark">Babzi.xyz</Link><nav><Link href="/#proof">Research</Link><Link href="/work">Writings</Link><Link href="/services">Scope</Link><span className="header-signal" /></nav></header>
         <Reveal eager>
-          <section className="mb-10 sm:mb-12">
-            <p className="mb-3 text-[11px] uppercase tracking-[0.12em] text-[var(--accent)]">
-              Archive
-            </p>
-            <h1 className="font-display text-[2rem] tracking-tight sm:text-[2.35rem]">
-              Writings
-            </h1>
-            <p className="mt-4 max-w-[34rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-              Notes and proposals on protocol incentives, governance, and agent economies. The home page stays short on purpose. This is the full shelf.
-            </p>
+          <section className="hero-section" style={{minHeight:"auto",gridTemplateColumns:"1fr",paddingBottom:"58px"}}>
+            <div className="hero-copy">
+              <p className="eyebrow">Archive · Research notes</p>
+              <h1 className="hero-title" style={{maxWidth:"760px"}}>Writings that examine how systems make behaviour profitable.</h1>
+              <p className="hero-subtitle">The home page is the short version. This is the full shelf: observations, protocol reads, frameworks, and design notes.</p>
+            </div>
           </section>
         </Reveal>
-
+        <div className="section-rule" />
         <Reveal>
-          <ul className="border-y border-[var(--line)]">
-            {posts.map((item) => {
-              const href = hrefFor(item);
-              const external = href.startsWith("http");
-              return (
-                <li
-                  key={item.id}
-                  className="border-b border-[var(--line)] last:border-b-0"
-                >
-                  <a
-                    href={href}
-                    {...(external
-                      ? { target: "_blank", rel: "noreferrer" }
-                      : {})}
-                    className="flex flex-col gap-1 py-4 transition hover:bg-[var(--bg-elevated)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
-                  >
-                    <span className="text-[15px] font-medium text-[var(--ink)]">
-                      {item.title}
-                    </span>
-                    <span className="shrink-0 text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">
-                      {item.meta}
-                    </span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <section className="section-block">
+            <div className="section-heading-row"><h2 className="section-title">All writings</h2><span className="section-note">{posts.length} published</span></div>
+            <div className="research-grid">
+              {posts.map(item => {
+                const href=hrefFor(item); const external=href.startsWith("http");
+                return <article className="research-card" key={item.id}><a className="research-card-link" href={href} {...(external?{target:"_blank",rel:"noreferrer"}:{})}><div className="research-card-body" style={{minHeight:"220px"}}><div className="research-meta"><span>{item.meta}</span><span>Research</span></div><h3>{item.title}</h3><p>{item.excerpt}</p><span className="arrow">↗</span></div></a></article>
+              })}
+            </div>
+          </section>
         </Reveal>
-
-        <p className="mt-10 text-[13px] text-[var(--muted)]">
-          <Link
-            href="/#offer"
-            className="font-medium text-[var(--ink)] underline decoration-[var(--line)] underline-offset-[5px] hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
-          >
-            Protocol Incentive and Actor Review
-          </Link>
-        </p>
-
-        <footer className="mt-14 border-t border-[var(--line)] pt-6 text-[12px] text-[var(--muted)]">
-          <p>© 2026 BABZI</p>
-        </footer>
+        <footer className="site-footer"><span>Babzi.xyz</span><div><Link href="/">Home</Link><a href="https://x.com/Babzi_web3" target="_blank" rel="noreferrer">X</a></div></footer>
       </div>
     </main>
   );

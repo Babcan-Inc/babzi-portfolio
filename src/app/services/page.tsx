@@ -2,123 +2,33 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Work with BABZI",
-  description:
-    "Scoped research and design reviews for protocol incentives, governance, and agent economies.",
-  openGraph: {
-    title: "Work with BABZI",
-    description:
-      "Scoped research and design reviews for protocol incentives, governance, and agent economies.",
-    url: "https://www.babzi.xyz/services",
-  },
+  title: "Scope · Babzi.xyz",
+  description: "Scoped research and design work for protocol incentives, governance, token design, and agentic economies.",
 };
 
 const services = [
-  {
-    name: "Focused Research Memo",
-    price: "$75",
-    scope: "One focused question.",
-    detail:
-      "A concise research memo with the relevant findings, evidence, and design questions. Best when you already know the specific issue you want examined.",
-  },
-  {
-    name: "Protocol Design Review",
-    price: "$150",
-    scope: "One mechanism or design area in context.",
-    detail:
-      "A structured review of how the mechanism works, what behaviour it rewards, where the assumptions sit, and what risks or questions deserve attention.",
-  },
-  {
-    name: "Deep Design Review",
-    price: "$250",
-    scope: "Multiple connected mechanisms.",
-    detail:
-      "A deeper review when incentives, reputation, governance, token design, or other mechanisms interact and need to be examined as one system.",
-  },
-  {
-    name: "Custom Research",
-    price: "$300+",
-    scope: "Broader or more involved work.",
-    detail:
-      "For work that falls outside the defined reviews. Scope, timing, and price are agreed before the work starts.",
-  },
+  {name:"Focused Research Memo",price:"$75",scope:"One focused question.",detail:"A concise memo that answers a defined question with the relevant evidence, implications, and design questions."},
+  {name:"Protocol Design Review",price:"$150",scope:"One mechanism or design area.",detail:"A structured review of how the mechanism works, what behaviour it rewards, which actors it assumes, and where the incentive surface can fail."},
+  {name:"Deep Design Review",price:"$250",scope:"Multiple connected mechanisms.",detail:"A deeper review when incentives, reputation, governance, token design, or other mechanisms need to be examined as one system."},
+  {name:"Custom Research",price:"$300+",scope:"Broader or more involved work.",detail:"For work outside the defined reviews. Scope, timing, and price are agreed before the work starts."},
 ];
 
-export default function ServicesPage() {
-  return (
-    <main className="page-shell relative min-h-screen">
-      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
-        <header className="mb-12 flex items-baseline justify-between gap-4 border-b border-[var(--line)] py-4 sm:mb-16">
-          <Link href="/" className="font-display text-[1.55rem] tracking-tight text-[var(--ink)]">
-            BABZI
-          </Link>
-          <Link href="/" className="text-[12.5px] text-[var(--muted)] transition hover:text-[var(--ink)]">
-            Home
-          </Link>
-        </header>
-
-        <section className="mb-12">
-          <p className="mb-3 text-[11px] uppercase tracking-[0.12em] text-[var(--accent)]">
-            Work with BABZI
-          </p>
-          <h1 className="font-display text-[2rem] tracking-tight sm:text-[2.35rem]">
-            Scoped research and design work.
-          </h1>
-          <p className="mt-4 max-w-[36rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-            The work is intentionally scoped. Start with the question or mechanism you need examined. Broader work is priced after the scope is clear.
-          </p>
-        </section>
-
-        <section>
-          <ul className="border-y border-[var(--line)]">
-            {services.map((service) => (
-              <li key={service.name} className="border-b border-[var(--line)] py-7 last:border-b-0">
-                <div className="flex items-baseline justify-between gap-5">
-                  <h2 className="font-display text-[1.35rem] tracking-tight text-[var(--ink)]">
-                    {service.name}
-                  </h2>
-                  <p className="shrink-0 text-[14px] font-medium text-[var(--accent)]">
-                    {service.price}
-                  </p>
-                </div>
-                <p className="mt-2 text-[12px] font-medium uppercase tracking-[0.1em] text-[var(--muted)]">
-                  {service.scope}
-                </p>
-                <p className="mt-3 max-w-[38rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-                  {service.detail}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-12 border border-[var(--line)] bg-[var(--bg-elevated)] px-5 py-7 sm:px-7">
-          <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[var(--accent)]">
-            Terms
-          </p>
-          <ul className="space-y-2 text-[14px] leading-relaxed text-[var(--muted)]">
-            <li>Payment is in cash before the work starts.</li>
-            <li>Timing is agreed with the scope before work begins.</li>
-            <li>Implementation, retainers, and full token model rebuilds are separate scopes.</li>
-          </ul>
-        </section>
-
-        <section className="mt-12">
-          <h2 className="font-display text-[1.5rem] tracking-tight">Start with the question.</h2>
-          <p className="mt-3 max-w-[34rem] text-[14.5px] leading-relaxed text-[var(--muted)]">
-            Send the mechanism, the question, and any material that matters. I will confirm the scope before work begins.
-          </p>
-          <p className="mt-5">
-            <a href="mailto:babziweb3@gmail.com" className="text-[13px] font-medium text-[var(--accent)] underline decoration-[var(--accent)]/35 underline-offset-[5px]">
-              Email BABZI
-            </a>
-          </p>
-        </section>
-
-        <footer className="mt-14 border-t border-[var(--line)] pt-6 text-[12px] text-[var(--muted)]">
-          <p>© 2026 BABZI</p>
-        </footer>
-      </div>
-    </main>
-  );
+export default function ServicesPage(){
+ return <main className="site-shell min-h-screen"><div className="mx-auto max-w-[1180px] px-5 pb-24 sm:px-8 lg:px-10">
+  <header className="site-header"><Link href="/" className="wordmark">Babzi.xyz</Link><nav><Link href="/#proof">Research</Link><Link href="/work">Writings</Link><Link href="/services">Scope</Link><span className="header-signal"/></nav></header>
+  <section className="hero-section" style={{minHeight:"auto",gridTemplateColumns:"1fr",paddingBottom:"55px"}}>
+   <div className="hero-copy"><p className="eyebrow">Scope · Applied work</p><h1 className="hero-title" style={{maxWidth:"720px"}}>Start with the behaviour the system is creating.</h1><p className="hero-subtitle">Commissioned work is scoped through three questions: who can act, what the system rewards, and where rational behaviour can break the design.</p></div>
+  </section>
+  <div className="section-rule"/>
+  <section className="section-block"><div className="method-grid">
+   {[["01","Actors","Who can act, what they can observe and optimize, and which actors the design leaves unaccounted for."],["02","Rewards","What the mechanism makes worth doing, including the behaviour participants can rationally learn to optimize."],["03","Failure modes","Where those incentives can produce outcomes the protocol did not intend, especially under pressure or at scale."]].map(([n,t,d])=><article className="method-item" key={n}><span className="method-number">{n}</span><h3>{t}</h3><p>{d}</p></article>)}
+  </div></section>
+  <div className="section-rule"/>
+  <section className="section-block"><div className="section-heading-row"><h2 className="section-title">Available scopes</h2><span className="section-note">Defined before work begins</span></div>
+   <div className="research-grid">{services.map(s=><article className="research-card" key={s.name}><div className="research-card-body" style={{minHeight:"220px"}}><div className="research-meta"><span>{s.scope}</span><span>{s.price}</span></div><h3>{s.name}</h3><p>{s.detail}</p></div></article>)}</div>
+  </section>
+  <div className="section-rule"/>
+  <section className="cta-section"><div><p className="eyebrow">Have a mechanism to stress test?</p><h2>Start with the question.</h2></div><a className="cta-link" href="mailto:babziweb3@gmail.com">Email BABZI ↗</a></section>
+  <footer className="site-footer"><span>Babzi.xyz</span><div><Link href="/">Home</Link><a href="https://x.com/Babzi_web3" target="_blank" rel="noreferrer">X</a></div></footer>
+ </div></main>
 }

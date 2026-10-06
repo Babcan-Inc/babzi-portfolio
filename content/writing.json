@@ -58,5 +58,17 @@
     "publishedAt": "2026-07-15",
     "featuredOnHome": false,
     "published": true
+  },
+  {
+    "id": "apyx-actor-table",
+    "slug": "the-actor-the-table-is-paying-for",
+    "title": "The actor the table is paying for",
+    "meta": "Protocol read · Apyx",
+    "excerpt": "apxUSD pays no dividend. The points pay the most for locking it. When the dollar trades to 90 cents, who is paid to buy it?",
+    "externalUrl": "",
+    "body": "apxUSD is the dollar. It does not pay a dividend. It is meant to trade near one dollar, backed by preferred shares from bitcoin treasury companies, plus cash and treasuries. apyUSD is what you receive if you lock that dollar. The preferreds pay a dividend, and that cash is what makes the wrapper redeem for more of the dollar over time. That is the yield.\n\nThe points do not follow that split.\n\nLock the dollar and you wait 14 days to leave. That pays 196x. Holding the dollar pays 8x. Holding the wrapper, the position that actually takes the dividend, pays 4x. A Pendle claim on the dollar pays 128x, and you do not have to hold the wrapper to earn it.\n\nSo the highest pay in the app is for locking the asset that pays nothing. A claim pays almost as much. The person who came for the yield is the cheapest of the three. A rational farmer reads that table and locks the dollar. They are not choosing the dollar, and they are not choosing the dividend. They are choosing the score.\n\nLeaving the wrapper is a different clock. You request, you wait about 20 days, you claim. There is no yield while you wait, and if you add to the request the 20 days start over. The same docs will sell that wait. It can be claimed after 3 days, for a fee that starts at 3.5% and falls toward 0.1%.\n\nIn June the dollar traded at 90 cents. The reserve held. The price did not. Solvency and a bid are not the same event. The 196x position cannot buy that print. The 128x position is a claim, not a buyer. What the table paid for was supply that could not leave. A price that falls needs someone to buy it.\n\nThe docs still end the season on 11 October and date the token to 13 October. On 23 September the project said both dates are moving, and that the Season 2 share rises from 6% to 9%. The multipliers did not change. The new date is not published. The share got larger while the exit date disappeared.\n\nYou paid 196x so the dollar would not leave. When it trades to 90 cents, who is paid to buy it?",
+    "publishedAt": "2026-10-06",
+    "featuredOnHome": false,
+    "published": true
   }
 ]

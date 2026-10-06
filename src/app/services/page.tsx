@@ -29,6 +29,6 @@ export default function ServicesPage(){
   </section>
   <div className="section-rule"/>
   <section className="cta-section"><div><p className="eyebrow">Have a mechanism to stress test?</p><h2>Start with the question.</h2></div><a className="cta-link" href="mailto:babziweb3@gmail.com">Email BABZI ↗</a></section>
-  <footer className="site-footer"><span>Babzi.xyz</span><div><Link href="/">Home</Link><a href="https://x.com/Babzi_web3" target="_blank" rel="noreferrer">X</a></div></footer>
+  <footer className="site-footer"><span>Babzi.xyz</span><div><Link href="/">Home</Link><a href="https://x.com/Its_Babzi" target="_blank" rel="noreferrer">X</a></div></footer>
  </div></main>
 }

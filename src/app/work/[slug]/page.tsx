@@ -16,7 +16,7 @@ export async function generateMetadata({
   const posts = publishedPosts(await loadWriting());
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Not found · BABZI" };
-  const preview = `/work/${post.slug}/opengraph-image`;
+  const preview = `https://www.babzi.xyz/og/${post.slug}.png`;
 
   return {
     title: `${post.title} · BABZI`,
@@ -29,6 +29,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
+      site: "@Its_Babzi",
+      creator: "@Its_Babzi",
       title: `${post.title} · BABZI`,
       description: post.excerpt || post.meta,
       images: [preview],

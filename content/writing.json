@@ -1,72 +1,12 @@
 [
   {
-    "id": "2a7775b8-f6e3-4cae-a2f1-13fc4a1d757a",
-    "slug": "the-institutional-shift-beneath-the-surface",
-    "title": "The Institutional Shift Beneath the Surface",
-    "meta": "OPINION/ANALYSIS",
-    "excerpt": "The institutionalization of crypto may be the least important part of what institutions are doing with it.\n\nFor years, the institutional crypto story was easy to understand. Bitcoin became an asset class. ETFs arrived. BlackRock and Fidelity entered the market. \n\nBanks began offering digital asset services. Traditional finance, after years of resistance, was finally accepting that crypto was not going away.\n\nThat is the part everyone can see.\n\nUnderneathe it, something much larger has been taking shape.",
-    "externalUrl": "",
-    "body": "The institutionalization of crypto may be the least important part of what institutions are doing with it.\n\nFor years, the institutional crypto story was easy to understand. Bitcoin became an asset class. ETFs arrived. BlackRock and Fidelity entered the market. \n\nBanks began offering digital asset services. Traditional finance, after years of resistance, was finally accepting that crypto was not going away.\n\nThat is the part everyone can see.\n\nUnderneath it, something much larger has been taking shape.\n\nFinancial institutions are beginning to put parts of the financial system itself onchain. \n\nMoney market funds. Treasury exposure. Settlement. Collateral. Ownership records. Payments. \n\nThe technology is moving beyond the asset and into the machinery around the asset.\n\nI started thinking about this after going down a rabbit hole around Jane Street.\n\nIf you are deep enough in financial markets or crypto, you must have probably come across the name. Outside those circles, probably not.\n\nJane Street is one of the world’s largest quantitative trading and market making firms. \n\nIt operates in a part of finance that rarely gets public attention: pricing markets, providing liquidity, finding arbitrage opportunities and using sophisticated systems to move faster than most participants ever could.\n\nThat world also produced people who would later become deeply involved in crypto.\n\nSam Bankman-Fried worked at Jane Street before founding Alameda Research. \n\nCaroline Ellison also worked at Jane Street before joining Alameda. Alameda’s early business was heavily based around cryptocurrency arbitrage.\n\nThat does not make Jane Street responsible for what happened at FTX. It does show how quickly expertise developed inside traditional financial markets could migrate into a new, fragmented market like crypto.\n\nCrypto offered a different kind of trading environment. Markets ran around the clock. Liquidity was fragmented across venues. \n\nAssets could move between platforms without the traditional settlement infrastructure sitting underneath them. Price discrepancies could appear and disappear quickly.\n\nFor people trained to find inefficiencies in markets, there was a lot to work with.\n\nThen there is the uncomfortable side of that sophistication.\n\nIn 2025, India’s securities regulator, SEBI, accused Jane Street entities of manipulating the Nifty 50 index through trading activity around derivatives expiry. \n\nJane Street disputed the allegations. SEBI’s order itself makes an important distinction between legitimate arbitrage, hedging and directional trading and activity that it considered manipulative.\n\nThat distinction is where things get uncomfortable.\n\nArbitrage is built around exploiting differences in price. Market making is built around providing liquidity. Neither requires manipulation.\n\nBut when a participant becomes sophisticated enough, large enough and fast enough to materially influence the market it is trading, the line between exploiting an inefficiency and influencing the conditions around that inefficiency becomes much harder to ignore.\n\nThat question did not begin with crypto. Crypto simply made many of these market structure problems more visible.\n\nAnd while people were debating whether institutions would eventually accept crypto, some of those institutions were already experimenting with the infrastructure underneath it.\n\nJ.P. Morgan is a good example.\n\nThe bank began working on blockchain infrastructure years before the current institutional crypto cycle. \n\nIts Kinexys business now says it has processed more than $4 trillion in transactions since inception, with billions of dollars moving through the system every day.\n\nThis is not a bank putting out a blockchain proof of concept and waiting to see whether anyone cares.\n\nIt is financial infrastructure being used for payments, tokenization, settlement and collateral.\n\nFranklin Templeton went down a similar path.\n\nIts Franklin OnChain U.S. Government Money Fund launched in 2021, using a public blockchain to record transactions and share ownership. \n\nThe fund became an early example of something that would have sounded strange in traditional finance a few years earlier: a regulated money market fund represented and administered through blockchain infrastructure.\n\nBlackRock has since taken the idea further.\n\nIts tokenized money market products and onchain share classes are putting traditional financial products onto blockchain networks. \n\nSome of those products use infrastructure connected to J.P. Morgan’s Kinexys and Ethereum.\n\nAt that point, the conversation changes.\n\nThese institutions are not simply putting crypto into traditional finance.\n\nThey are putting traditional finance onto infrastructure that came out of crypto.\n\nThat is a much bigger shift.\n\nA Treasury fund does not become a crypto asset simply because its ownership is represented onchain. \n\nA money market fund does not stop being a regulated financial product because its shares can move through blockchain infrastructure.\n\nThe underlying financial product can remain familiar while the machinery around it changes.\n\nThat is what makes this transition easy to miss.\n\nPeople naturally watch the asset.\n\nThey watch Bitcoin’s price. They watch ETF inflows. They watch which institutions bought how much.\n\nFar less attention goes to the rails underneath.\n\nWho settles the transaction?\n\nWhere is ownership recorded?\n\nHow is collateral moved?\n\nHow quickly can an asset settle?\n\nWho controls access?\n\nCan the asset interact with another financial system without being converted back into the old format?\n\nThose are infrastructure questions.\n\nAnd institutions are already answering some of them with blockchain systems.\n\nThe institutionalization of crypto, then, may be only the visible layer of a much larger transition.\n\nThe Bitcoin ETF is easy to understand. A traditional investor can gain exposure to Bitcoin through a familiar financial wrapper.\n\nA tokenized Treasury fund is more subtle.\n\nA bank using blockchain infrastructure for settlement is more subtle.\n\nA regulated financial product whose ownership exists onchain is more subtle.\n\nNone of these developments require traditional finance to suddenly become crypto native.\n\nThey require something more consequential: traditional financial institutions deciding that some of the underlying properties of blockchain infrastructure are useful enough to incorporate into the systems they already operate.\n\nThat is why I am less interested in asking whether crypto has finally gone mainstream.\n\nIt obviously has.\n\nThe better question is what happens when the institutions that already understand financial markets at an extraordinary level begin rebuilding parts of those markets with programmable infrastructure.\n\nThe public sees the ETFs.\n\nThe institutions are building the rails.\n\nAnd by the time the infrastructure becomes obvious to everyone else, the financial system built on top of it may already look very different from the one we have now.",
-    "publishedAt": "2026-09-30",
-    "featuredOnHome": false,
-    "published": true
-  },
-  {
-    "id": "polymarket-poly-design-note",
-    "slug": "polymarket-poly-design-note",
-    "title": "Polymarket $POLY design note",
-    "meta": "Public proposal",
-    "excerpt": "Public design note on $POLY incentive surface.",
-    "externalUrl": "https://x.com/Babzi_web3/status/2075075380470280507",
-    "body": "",
-    "publishedAt": "2026-07-01",
-    "featuredOnHome": true,
-    "published": true
-  },
-  {
-    "id": "economy-for-autonomous-agents",
-    "slug": "economy-for-autonomous-agents",
-    "title": "How to Build an Economy for Autonomous Agents",
-    "meta": "Framework",
-    "excerpt": "Framework for economies where agents are actors.",
-    "externalUrl": "https://x.com/Babzi_web3/status/2098649769748926551",
-    "body": "",
-    "publishedAt": "2026-09-01",
-    "featuredOnHome": true,
-    "published": true
-  },
-  {
-    "id": "vocdoni-constraints",
-    "slug": "vocdoni-constraints",
-    "title": "When real constraints expose assumptions in the deck",
-    "meta": "Field stress test · Vocdoni",
-    "excerpt": "Field stress test of digital voting surfaces under ordinary infrastructure constraints.",
-    "externalUrl": "https://paragraph.com/@babziweb3%40gmail.com/i-tested-three-digital-voting-tools-from-nigeria-here-is-what-actually-happened",
-    "body": "",
-    "publishedAt": "2026-06-01",
-    "featuredOnHome": false,
-    "published": true
-  },
-  {
-    "id": "canopy-progressive-tokenization",
-    "slug": "canopy-progressive-tokenization",
-    "title": "Progressive Tokenization for Canopy",
-    "meta": "Public framework",
-    "excerpt": "Public proposal on nested ownership paths without a premature token.",
-    "externalUrl": "https://x.com/Babzi_web3/status/2077252115513131290",
-    "body": "",
-    "publishedAt": "2026-07-15",
-    "featuredOnHome": false,
-    "published": true
-  },
-  {
     "id": "apyx-actor-table",
     "slug": "the-actor-the-table-is-paying-for",
     "title": "The actor the table is paying for",
     "meta": "Protocol read · Apyx",
     "excerpt": "apxUSD pays no dividend. The points pay the most for locking it. When the dollar trades to 90 cents, who is paid to buy it?",
     "externalUrl": "",
-    "body": "apxUSD is the dollar. It does not pay a dividend. It is meant to trade near one dollar, backed by preferred shares from bitcoin treasury companies, plus cash and treasuries. apyUSD is what you receive if you lock that dollar. The preferreds pay a dividend, and that cash is what makes the wrapper redeem for more of the dollar over time. That is the yield.\n\nThe points do not follow that split.\n\nLock the dollar and you wait 14 days to leave. That pays 196x. Holding the dollar pays 8x. Holding the wrapper, the position that actually takes the dividend, pays 4x. A Pendle claim on the dollar pays 128x, and you do not have to hold the wrapper to earn it.\n\nSo the highest pay in the app is for locking the asset that pays nothing. A claim pays almost as much. The person who came for the yield is the cheapest of the three. A rational farmer reads that table and locks the dollar. They are not choosing the dollar, and they are not choosing the dividend. They are choosing the score.\n\nLeaving the wrapper is a different clock. You request, you wait about 20 days, you claim. There is no yield while you wait, and if you add to the request the 20 days start over. The same docs will sell that wait. It can be claimed after 3 days, for a fee that starts at 3.5% and falls toward 0.1%.\n\nIn June the dollar traded at 90 cents. The reserve held. The price did not. Solvency and a bid are not the same event. The 196x position cannot buy that print. The 128x position is a claim, not a buyer. What the table paid for was supply that could not leave. A price that falls needs someone to buy it.\n\nThe docs still end the season on 11 October and date the token to 13 October. On 23 September the project said both dates are moving, and that the Season 2 share rises from 6% to 9%. The multipliers did not change. The new date is not published. The share got larger while the exit date disappeared.\n\nYou paid 196x so the dollar would not leave. When it trades to 90 cents, who is paid to buy it?",
+    "body": "apxUSD is the dollar. It does not pay a dividend. It is meant to trade near one dollar, backed by preferred shares from bitcoin treasury companies, plus cash and treasuries. apyUSD is what you receive if you lock that dollar. The preferreds pay a dividend, and that cash is what makes the wrapper redeem for more of the dollar over time. That is the yield.\n\nThe points do not follow that split.\n\nLock the dollar and you wait 14 days to leave. That pays 196x. The FAQ still prices that same 14-day uncommit at 20x. Holding the dollar pays 8x. Holding the wrapper, the position that actually takes the dividend, pays 4x. A Pendle claim on the dollar pays 128x, and you do not have to hold the wrapper to earn it.\n\nSo the highest pay in the app is for locking the asset that pays nothing. A claim pays almost as much. The person who came for the yield is the cheapest of the three. A rational farmer reads that table and locks the dollar. They are not choosing the dollar, and they are not choosing the dividend. They are choosing the score.\n\nLeaving the wrapper is a different clock. You request, you wait about 20 days, you claim. There is no yield while you wait, and if you add to the request the 20 days start over. The same docs will sell that wait. It can be claimed after 3 days, for a fee that starts at 3.5% and falls toward 0.1%.\n\nIn June the dollar traded at 90 cents. The reserve held. The price did not. Solvency and a bid are not the same event. The 196x position cannot buy that print. The 128x position is a claim, not a buyer. What the table paid for was supply that could not leave. A price that falls needs someone to buy it.\n\nThe docs still end the season on 11 October and date the token to 13 October. On 23 September the project said both dates are moving, and that the Season 2 share rises from 6% to 9%. The multipliers did not change. The new date is not published. The share got larger while the exit date disappeared.\n\n**You paid 196x so the dollar would not leave. When it trades to 90 cents, who is paid to buy it?**",
     "publishedAt": "2026-10-06",
     "featuredOnHome": false,
     "published": true

@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Babzi_web3",
-    creator: "@Babzi_web3",
+    site: "@Its_Babzi",
+    creator: "@Its_Babzi",
     title: "Babzi.xyz",
     description: "The economy receives the behaviour it makes profitable.",
   },

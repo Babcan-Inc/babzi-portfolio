@@ -48,6 +48,7 @@ export default async function WritingSlugPage({
   if (!post || !post.body.trim()) notFound();
 
   const html = await marked.parse(post.body);
+  const brief = post.excerpt && !post.excerpt.includes("\n") ? post.excerpt : "";
 
   return (
     <main id="top" className="page-shell relative">
@@ -61,7 +62,8 @@ export default async function WritingSlugPage({
           <p className="mb-3 text-[11px] uppercase tracking-[0.12em] text-[var(--accent)]">{post.meta}</p>
           <h1 className="font-display text-[2rem] tracking-tight sm:text-[2.6rem]">{post.title}</h1>
           {post.publishedAt ? <p className="mt-3 text-[12px] text-[var(--muted)]">{post.publishedAt}</p> : null}
-          <div className="writing-body mt-10" dangerouslySetInnerHTML={{ __html: html }} />
+          {brief ? <p className="writing-brief">{brief}</p> : null}
+          <div className="writing-body" dangerouslySetInnerHTML={{ __html: html }} />
         </article>
 
         <p className="mt-14 text-[13px]">

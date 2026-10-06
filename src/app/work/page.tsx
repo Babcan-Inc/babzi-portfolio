@@ -36,7 +36,7 @@ export default async function WorkPage() {
             </div>
           </section>
         </Reveal>
-        <footer className="site-footer"><span>Babzi.xyz</span><div><Link href="/">Home</Link><a href="https://x.com/Babzi_web3" target="_blank" rel="noreferrer">X</a></div></footer>
+        <footer className="site-footer"><span>Babzi.xyz</span><div><Link href="/">Home</Link><a href="https://x.com/Its_Babzi" target="_blank" rel="noreferrer">X</a></div></footer>
       </div>
     </main>
   );

@@ -10,6 +10,7 @@ type Writing = {
   slug: string;
   title: string;
   meta: string;
+  excerpt: string;
   publishedAt: string;
 };
 
@@ -17,23 +18,40 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params;
   const post = (writings as Writing[]).find((item) => item.slug === slug);
   const title = post?.title ?? "BABZI";
-  const meta = post?.meta ?? "WRITINGS";
+  const meta = post?.meta ?? "Writings";
   const date = post?.publishedAt ?? "";
+  const excerpt = (post?.excerpt ?? "").replace(/\s+/g, " ").trim();
 
   return new ImageResponse(
-    <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", background: "#f1ebe1", color: "#161210", padding: "64px 72px", border: "12px solid #7a2e24", fontFamily: "Georgia, serif" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", fontSize: 28, letterSpacing: "-0.02em" }}>BABZI</div>
-        <div style={{ display: "flex", fontFamily: "Arial, sans-serif", fontSize: 20, letterSpacing: "0.14em", color: "#7a2e24" }}>{meta}</div>
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          background: "#0b0b0a",
+          color: "#eee8dc",
+          padding: "64px 72px",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", fontSize: 32, letterSpacing: "-0.03em" }}>Babzi.xyz</div>
+          <div style={{ display: "flex", fontSize: 18, letterSpacing: "0.12em", textTransform: "uppercase", color: "#c56f32" }}>{meta}</div>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", maxWidth: 1000 }}>
+          <div style={{ display: "flex", fontSize: 58, lineHeight: 1.05, letterSpacing: "-0.03em" }}>{title}</div>
+          {excerpt ? (
+            <div style={{ display: "flex", marginTop: 28, fontSize: 28, lineHeight: 1.35, color: "#c56f32" }}>{excerpt}</div>
+          ) : null}
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", width: 84, height: 2, background: "#c56f32" }} />
+          <div style={{ display: "flex", fontSize: 20, color: "#aaa295" }}>{date}</div>
+        </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "column", maxWidth: 980 }}>
-        <div style={{ display: "flex", fontSize: 58, lineHeight: 1.08, letterSpacing: "-0.025em" }}>{title}</div>
-      </div>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", fontFamily: "Arial, sans-serif", fontSize: 20, color: "#5f574f" }}>
-        <div style={{ display: "flex" }}>Protocol incentives · governance · agent economies</div>
-        <div style={{ display: "flex" }}>{date}</div>
-      </div>
-    </div>,
+    ),
     size,
   );
 }

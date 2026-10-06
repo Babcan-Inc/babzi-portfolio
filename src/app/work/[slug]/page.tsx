@@ -45,54 +45,27 @@ export default async function WritingSlugPage({
   const posts = publishedPosts(await loadWriting());
   const post = posts.find((p) => p.slug === slug);
 
-  // Prefer on-site body when visiting the slug and body exists
-  if (!post || !post.body.trim()) {
-    notFound();
-  }
+  if (!post || !post.body.trim()) notFound();
 
   const html = await marked.parse(post.body);
 
   return (
     <main id="top" className="page-shell relative">
-      <div className="mx-auto max-w-[680px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
+      <div className="mx-auto max-w-[720px] px-5 pb-28 pt-3 sm:px-8 sm:pt-4">
         <header className="mb-12 flex items-baseline justify-between gap-4 border-b border-[var(--line)] py-4 sm:mb-16">
-          <Link
-            href="/"
-            className="font-display text-[1.55rem] tracking-tight text-[var(--ink)]"
-          >
-            BABZI
-          </Link>
-          <Link
-            href="/work"
-            className="text-[12.5px] text-[var(--muted)] transition hover:text-[var(--ink)]"
-          >
-            Writings
-          </Link>
+          <Link href="/" className="font-display text-[1.55rem] tracking-tight text-[var(--ink)]">Babzi.xyz</Link>
+          <Link href="/work" className="text-[12.5px] text-[var(--muted)] transition hover:text-[var(--ink)]">Writings</Link>
         </header>
 
         <article>
-          <p className="mb-3 text-[11px] uppercase tracking-[0.12em] text-[var(--accent)]">
-            {post.meta}
-          </p>
-          <h1 className="font-display text-[2rem] tracking-tight sm:text-[2.35rem]">
-            {post.title}
-          </h1>
-          {post.publishedAt ? (
-            <p className="mt-3 text-[12px] text-[var(--muted)]">{post.publishedAt}</p>
-          ) : null}
-          <div
-            className="writing-body mt-8"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <p className="mb-3 text-[11px] uppercase tracking-[0.12em] text-[var(--accent)]">{post.meta}</p>
+          <h1 className="font-display text-[2rem] tracking-tight sm:text-[2.6rem]">{post.title}</h1>
+          {post.publishedAt ? <p className="mt-3 text-[12px] text-[var(--muted)]">{post.publishedAt}</p> : null}
+          <div className="writing-body mt-10" dangerouslySetInnerHTML={{ __html: html }} />
         </article>
 
-        <p className="mt-12 text-[13px]">
-          <Link
-            href="/work"
-            className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/35 underline-offset-[5px] hover:decoration-[var(--accent)]"
-          >
-            More writings
-          </Link>
+        <p className="mt-14 text-[13px]">
+          <Link href="/work" className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/35 underline-offset-[5px] hover:decoration-[var(--accent)]">More writings</Link>
         </p>
 
         <footer className="mt-14 border-t border-[var(--line)] pt-6 text-[12px] text-[var(--muted)]">

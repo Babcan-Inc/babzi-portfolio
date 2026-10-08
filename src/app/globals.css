@@ -18,3 +18,42 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);-webkit-f
 .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}.reveal.is-in{opacity:1;transform:translateY(0)}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 @media(max-width:800px){.hero-section{min-height:auto;grid-template-columns:1fr;gap:34px;padding:52px 0 58px}.hero-evidence{min-height:300px}.method-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.writing-grid{grid-template-columns:1fr}.writing-card{border-right:0;border-bottom:1px solid var(--line);min-height:auto;padding:22px 0!important}.writing-card:last-child{border-bottom:0}.research-track{padding-bottom:16px}.research-card{flex-basis:78vw}.intervention-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cta-section{align-items:flex-start;flex-direction:column}}
 @media(max-width:600px){.site-header{height:64px}.site-header nav{gap:11px;font-size:7px}.wordmark{font-size:1.4rem}.hero-title{font-size:2.5rem;line-height:1.01}.hero-subtitle{font-size:1.05rem;margin-top:22px}.hero-evidence{min-height:255px}.section-block{padding:50px 0}.section-heading-row{margin-bottom:24px}.section-title{font-size:1.4rem}.method-grid,.intervention-grid{grid-template-columns:1fr}.research-card{flex-basis:86vw;padding-left:20px}.research-card-body{min-height:410px;padding:4px 18px 0 0}.research-card h3{font-size:1.45rem}.research-card .evidence-visual{flex-basis:180px;height:180px;min-height:180px;margin-top:auto}.method-item{border-right:0;border-bottom:1px solid var(--line);min-height:auto;padding:21px 0!important}.intervention-card{border-right:0;border-bottom:1px solid var(--line);padding:21px 0!important}.intervention-card:last-child{border-bottom:0}.method-item:last-child{border-bottom:0}.research-card-body{min-height:410px}.research-card .evidence-visual{height:180px;min-height:180px}.cursor-dot,.cursor-ring{display:none}.cta-section{padding:54px 0 66px}.site-footer{font-size:8px}.writing-brief{margin-top:22px;font-size:1.08rem}.writing-body{margin-top:34px;font-size:15px;line-height:1.88}.writing-body p{margin-bottom:1.7rem}.writing-body p:last-child{margin-top:2.4rem}}
+
+
+/* Selected research: editorial image-led carousel */
+.research-carousel{min-width:0}
+.research-track{gap:28px;padding:8px 0 12px 1px;align-items:stretch}
+.research-card{flex:0 0 min(72vw,560px);min-width:0;padding-left:24px}
+.research-card-link{display:flex;flex-direction:column;min-width:0}
+.research-card-body{min-height:0;height:100%;padding:8px 24px 0 0;display:flex;flex-direction:column}
+.research-card h3{max-width:460px;font-size:clamp(1.7rem,2.7vw,2.35rem);line-height:1.04}
+.research-card p{max-width:470px;font-size:13px;line-height:1.65}
+.research-card .evidence-visual{position:relative;display:flex;flex-direction:column;justify-content:flex-start;gap:0;flex:0 0 auto;width:100%;height:clamp(210px,25vw,300px);min-height:0;margin-top:26px;padding:22px 24px;border:1px solid var(--line);background:#10100f;isolation:isolate}
+.evidence-visual:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 78% 28%,rgba(197,111,50,.14),transparent 38%),linear-gradient(135deg,transparent 35%,rgba(238,232,220,.035) 35.2%,transparent 35.8%,transparent 57%,rgba(238,232,220,.045) 57.2%,transparent 57.8%)}
+.evidence-visual:after{content:"";position:absolute;inset:16% 9%;z-index:-1;opacity:.8;background:repeating-linear-gradient(150deg,transparent 0 28px,rgba(197,111,50,.25) 29px 30px,transparent 31px 58px);clip-path:polygon(0 20%,18% 0,38% 36%,57% 12%,77% 55%,100% 25%,100% 100%,0 100%)}
+.evidence-kicker{display:block;font-family:var(--font-sans),system-ui,sans-serif;font-size:9px;line-height:1.4;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.evidence-mark{display:block;margin-top:auto;font-family:var(--font-display),Georgia,serif;font-size:clamp(2.8rem,7vw,5.8rem);line-height:.9;letter-spacing:-.055em;color:var(--ink)}
+.evidence-rule{display:block;width:100%;height:1px;margin-top:16px;background:var(--line)}
+.evidence-caption{display:block;margin-top:12px;font-family:var(--font-sans),system-ui,sans-serif;font-size:10px;line-height:1.4;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.evidence-vocdoni{justify-content:space-between}
+.evidence-logo-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:12px;color:var(--ink)}
+.protocol-logo{width:24px;height:24px;object-fit:contain}.protocol-logo-small{width:22px;height:22px}.evidence-separator{color:var(--accent)}
+.field-map{position:relative;height:60%;min-height:100px;margin-top:auto;border-top:1px solid var(--line);background:repeating-linear-gradient(0deg,transparent 0 27px,rgba(238,232,220,.06) 28px),repeating-linear-gradient(90deg,transparent 0 35px,rgba(238,232,220,.06) 36px)}
+.map-dot{position:absolute;left:42%;top:35%;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 8px rgba(197,111,50,.1),0 0 25px rgba(197,111,50,.35)}
+.map-line{position:absolute;height:1px;background:rgba(197,111,50,.55);transform-origin:left}.map-line-one{left:10%;top:72%;width:68%;transform:rotate(-24deg)}.map-line-two{left:42%;top:35%;width:43%;transform:rotate(30deg)}
+.map-label{position:absolute;right:0;bottom:0;color:var(--muted);font-size:8px;letter-spacing:.16em}
+.research-card-count{display:flex;align-items:center;gap:9px;margin:14px 24px 0 0;color:var(--muted);font-size:9px;letter-spacing:.12em}
+.research-card-count i{display:inline-block;width:26px;height:1px;background:var(--accent)}
+.research-hint{display:flex;justify-content:space-between;gap:16px;margin:8px 0 0 25px;color:var(--muted);font-size:8px;letter-spacing:.14em;text-transform:uppercase}
+.research-card .arrow{right:24px;top:6px}
+@media(max-width:600px){
+ .research-track{gap:18px;padding:6px 0 10px 1px}
+ .research-card{flex:0 0 82vw;padding-left:18px}
+ .research-card-body{min-height:0;height:auto;padding:4px 12px 0 0}
+ .research-card h3{font-size:1.65rem;max-width:100%;padding-right:14px}
+ .research-card p{font-size:12px;line-height:1.6;max-width:100%}
+ .research-card .evidence-visual{height:205px;min-height:0;flex-basis:205px;margin-top:22px;padding:18px}
+ .evidence-mark{font-size:3.8rem}
+ .research-card-count{margin-top:12px}
+ .research-hint{margin-left:19px;font-size:7px}
+}

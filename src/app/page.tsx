@@ -68,11 +68,14 @@ export default function Home() {
         <Reveal>
           <section id="proof" className="section-block scroll-mt-24">
             <div className="section-heading-row"><h2 className="section-title">Selected research</h2><span className="section-note">Independent protocol reads</span></div>
-            <div className="research-track" aria-label="Selected research">
-              {research.map((item) => {
+            <div className="research-carousel">
+              <div className="research-track" aria-label="Selected research">
+              {research.map((item, index) => {
                 const external = item.href.startsWith("http");
-                return <article className="research-card" key={item.name}><a href={item.href} {...(external ? {target:"_blank",rel:"noreferrer"} : {})} className="research-card-link"><div className="research-card-body"><div className="research-meta"><span>{item.label}</span><span>{item.name}</span></div><h3>{item.title}</h3><p>{item.text}</p><EvidenceVisual type={item.visual} /><span className="arrow">↗</span></div></a></article>;
+                return <article className="research-card" key={item.name}><a href={item.href} {...(external ? {target:"_blank",rel:"noreferrer"} : {})} className="research-card-link"><div className="research-card-body"><div className="research-meta"><span>{item.label}</span><span>{item.name}</span></div><h3>{item.title}</h3><p>{item.text}</p><EvidenceVisual type={item.visual} /><span className="arrow">↗</span></div><span className="research-card-count">0{index + 1} <i /> 03</span></a></article>;
               })}
+              </div>
+              <p className="research-hint"><span>DRAG OR SWIPE</span><span>01 — 03 / SELECTED WORK</span></p>
             </div>
           </section>
         </Reveal>
